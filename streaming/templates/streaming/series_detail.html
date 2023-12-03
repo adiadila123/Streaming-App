@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid series-image"  style="background-image: url('{{ series.image_url }}')"></div>
+<ul class="container mt-2">
+    <h1>{{ series.title }} - {{ series.release_date }}</h1>
+    <p>{{ series.description }}</p>
+    <!-- Additional series details can go here -->
+
+    {% for season in series.seasons.all %}
+        <h3>{{ season.title }} Season {{ season.season_number }}:</h3>
+        <ul class="grid-container">
+            {% for episode in season.episodes.all %}
+                    <li class="item">
+                      <a class="btn btn-outline-secondary" href="{% url 'episode_detail' episode.pk %}">{{ episode.title }}</a>
+                    </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

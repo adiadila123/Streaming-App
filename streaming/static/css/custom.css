@@ -1,0 +1,298 @@
+/* Custom Body Styles */
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+html {
+     scroll-behavior: smooth;
+     overflow-x: hidden !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #aaaaaa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+    line-height: normal;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px
+}
+
+h2 {
+     font-size: 22px
+}
+
+h3 {
+     font-size: 18px
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+
+/* Header Styles */
+header {
+    color: #6c757d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+p {
+     margin: 20px;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+}
+
+/* Main Content Styles */
+main {
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@keyframes move {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Card Style */
+.card {
+    width: 250px;
+    height: 150px;
+    display: grid;
+    gap: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h5 {
+     margin-top: 0;
+}
+
+/* Card Style Hover */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.card-img-overlay .card-title {
+    color: #6c757d;
+}
+
+.card .card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* The rest of your styles */
+}
+
+.card .card-img-overlay:hover {
+    opacity: 0.9;
+    animation-name: fadeIn;
+    animation-duration: 0.5s; /* Animation lasts for 2 seconds */
+    animation-fill-mode: inherit; /* Element will remain in the final state after the animation completes */
+
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.series-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+.item {
+    font-size: 1em; /* or use rem, %, vw, etc. */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Dark Theme Pagination */
+.pagination {
+    color: white;
+}
+
+.pagination .page-link {
+    background: #444;
+    color: white;
+    border: 1px solid #555;
+}
+
+.pagination .page-item.active .page-link {
+    background: #666;
+    border-color: #777;
+}
+
+.pagination .page-link:hover {
+    background: #555;
+}
+
+/* darkmode.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #636464;
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a;
+}
+
+/* Other dark mode specific styles */
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .item {
+        font-size: 1.1em;
+    }
+}
+
+/* Media query for tablets and smaller devices */
+@media only screen and (max-width: 768px) {
+    .item {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    /* Additional adjustments for smaller screens */
+    .navbar {
+        /* Adjust navbar styles */
+    }
+
+    h1, h2, h3 {
+        font-size: smaller; /* Adjust heading sizes */
+    }
+
+    /* Any other element that needs a different style on smaller screens */
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    .item {
+        font-size: 0.9em;
+    }
+}

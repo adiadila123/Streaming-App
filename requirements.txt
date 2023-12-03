@@ -1,0 +1,18 @@
+altgraph @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot11/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-141/altgraph-0.17.2-py2.py3-none-any.whl
+asgiref==3.5.2
+certifi==2023.7.22
+charset-normalizer==3.2.0
+Django==4.0.8
+docutils==0.20.1
+future @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot11/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-141/future-0.18.2-py3-none-any.whl
+idna==3.4
+Kivy==2.2.1
+Kivy-Garden==0.1.5
+macholib @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot11/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-141/macholib-1.15.2-py2.py3-none-any.whl
+Pillow==10.0.0
+Pygments==2.16.1
+requests==2.31.0
+six @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot11/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-141/six-1.15.0-py2.py3-none-any.whl
+somepackage==1.2.3
+sqlparse==0.4.3
+urllib3==2.0.4
